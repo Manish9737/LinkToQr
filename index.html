@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkToQr - QR Code Generator</title>
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-primary text-white py-3">
+        <div class="container text-center">
+            <h1 class="display-5 fw-bold">LinkToQr</h1>
+            <p class="lead">Generate QR codes instantly from any link!</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <!-- QR Code Generator Section -->
+        <section class="card shadow-lg p-4">
+            <h2 class="text-primary text-center mb-4">Generate Your QR Code</h2>
+            <div class="mb-3">
+                <label for="linkInput" class="form-label">Enter your link:</label>
+                <input
+                    type="text"
+                    id="linkInput"
+                    class="form-control"
+                    placeholder="https://example.com"
+                />
+            </div>
+            <div class="d-flex flex-column flex-md-row justify-content-center gap-2">
+                <button id="generateBtn" class="btn btn-primary">
+                    Generate QR Code
+                </button>
+                <button id="downloadBtn" class="btn btn-success" disabled>
+                    Download QR Code
+                </button>
+            </div>
+            <div id="qrContainer" class="mt-4">
+                <canvas id="qrcode"></canvas>
+            </div>
+        </section>
+
+        <!-- Informational Section -->
+        <section class="mt-5">
+            <div class="text-center mb-4">
+                <h2 class="text-primary">What is LinkToQr?</h2>
+                <p class="text-muted">
+                    LinkToQr is a simple tool to generate QR codes from any link. QR codes make it easy to share and access links quickly using smartphones or other QR code scanners.
+                </p>
+            </div>
+            <div>
+                <h2 class="text-primary text-center">How to Use?</h2>
+                <ol class="text-muted">
+                    <li>Enter your link in the input field above.</li>
+                    <li>Click the <strong>Generate QR Code</strong> button.</li>
+                    <li>View the generated QR code.</li>
+                    <li>Click the <strong>Download QR Code</strong> button to save it as an image.</li>
+                </ol>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-3 mt-5">
+        <div class="container text-center">
+            <p>&copy; 2024 LinkToQr. All rights reserved.</p>
+            <p>Made with ❤️ by Manishkumar Kumavat</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

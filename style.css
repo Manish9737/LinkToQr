@@ -1,0 +1,57 @@
+body {
+    background: linear-gradient(135deg, #007bff, #6c63ff);
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+header {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    border-radius: 15px;
+    background: #ffffff;
+    color: #333;
+}
+
+#qrContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #007bff;
+    width: 260px; /* Fixed size slightly larger than the QR code */
+    height: 260px;
+    margin:0 auto;
+    background-color: #f8f9fa; /* Light background for contrast */
+    border-radius: 8px; /* Slightly rounded corners */
+}
+
+/* QR Code Canvas */
+#qrcode {
+    max-width: 250px; /* Adjust to fit inside the container */
+    max-height: 250px;
+}
+
+canvas {
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+    border-top: 3px solid rgba(255, 255, 255, 0.2);
+}
+
+h2.text-primary {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+/* Button Layout for Mobile View */
+@media (max-width: 768px) {
+    .d-flex {
+        flex-direction: column !important;
+    }
+    .d-flex .btn {
+        width: 100%; /* Full width buttons for mobile */
+    }
+}
