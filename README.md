@@ -60,12 +60,12 @@ LinkToQr/
 ## Contributing
 Feel free to fork this project, submit issues, or send pull requests if you want to contribute. Contributions are always welcome!
 
-### License
+## License
 This project is open-source and available under the MIT License.
 
 ## Author
 Manishkumar Kumavat
 Made with ❤️
 
-### Demo
+## Demo
 - Link: http://manish9737.github.io/LinkToQr/
