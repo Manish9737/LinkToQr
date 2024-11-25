@@ -66,3 +66,6 @@ This project is open-source and available under the MIT License.
 ## Author
 Manishkumar Kumavat
 Made with ❤️
+
+### Demo
+- Link: http://manish9737.github.io/LinkToQr/
